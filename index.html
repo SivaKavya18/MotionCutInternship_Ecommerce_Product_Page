@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav>
+        <div class="logo-nav">
+            <div class="logo-name">
+                <div class="icon1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bag-fill svg1" viewBox="0 0 16 16">
+  <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5z"/>
+</svg>
+                </div>
+                <h1><span class="span1">E</span>COMMERCE<span class="span1">S</span>HOPPE</h1>
+            </div>
+            <div class="icons">
+                <div onclick="homefun()" class="hicon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill svg1" viewBox="0 0 16 16">
+  <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
+  <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
+</svg></div>
+            <div onclick="cart()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check-fill svg1" viewBox="0 0 16 16">
+  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+</svg>
+                </div>
+                </div>
+        </div>
+        <div class="input-div" id="inputid" >
+            <input type="search" class="input1" size="40" placeholder="Search...." style="height: 25px;" id="inputdiv" />
+            <div onclick="searchInput()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search icon-se" viewBox="0 0 16 16">
+  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+</svg>
+            </div>
+        </div>
+    </nav>
+    <section id="home">
+        <div id="main">
+        <div class="items" id="itemId">
+            <div class="item" id="item1">
+                <img src="./images/trendydress.avif" class="img-item"/>
+                <p class="item-name">Floral Frock</p>
+                <p class="item-desc">A beautiful floral frock suitable during summer which is simple and comfortable</p>
+                <p class="item-name">Rs 950</p>
+                <button class="btn-cart" onclick="AddToCart(0,950)">Add to Cart</button>
+            </div>
+            <div class="item" id="item2">
+                <img src="./images/coat.avif" class="img-item"/>
+                <p class="item-name">Grey Wool Coat</p>
+                <p class="item-desc">A Classic grey wool coat isolated over white suitable during winter season</p>
+                <p class="item-name">Rs 2,050</p>
+                <button class="btn-cart" onclick="AddToCart(1,2050)">Add to Cart</button>
+            </div>
+            <div class="item" id="item3">
+                <img src="./images/Sneakers.jpeg" class="img-item"/>
+                <p class="item-name">Sneakers</p>
+                <p class="item-desc">A pair of black sneakers with white lace which can be used for daily wear also</p>
+                <p class="item-name">Rs 1,859</p>
+                <button class="btn-cart" onclick="AddToCart(2,1859)">Add to Cart</button>
+            </div>
+            <div class="item" id="item4">
+                <img src="./images/womenJeans.jpg" class="img-item"/>
+                <p class="item-name">Woman Jeans</p>
+                <p class="item-desc">Jeans for women which is super comfortable and durable</p>
+                <p class="item-name">Rs 1,590</p>
+                <button class="btn-cart" onclick="AddToCart(3,1590)">Add to Cart</button>
+            </div>
+            <div class="item" id="item5">
+                <img src="./images/headphone.jpg" class="img-item"/>
+                <p class="item-name">Wireless Headphones</p>
+                <p class="item-desc">Black Wireless Headphones which is foldable, has 30-hour battery life with USB-C fast charging</p>
+                <p class="item-name">Rs 4,890</p>
+                <button class="btn-cart" onclick="AddToCart(4,4890)">Add to Cart</button>
+            </div>
+            <div class="item" id="item6">
+                <img src="./images/earphones.jpeg" class="img-item"/>
+                <p class="item-name">Earphones</p>
+                <p class="item-desc">Black Earphones fits you perfectly without hurting your ears which gives superior comfort</p>
+                <p class="item-name">Rs 349</p>
+                <button class="btn-cart" onclick="AddToCart(5,349)">Add to Cart</button>
+            </div>
+            <div class="item" id="item7">
+                <img src="./images/watch.jpeg" class="img-item"/>
+                <p class="item-name">Black Leather Watch</p>
+                <p class="item-desc">Black Round Analog Watch With Black Leather Straps which is water resistance</p>
+                <p class="item-name">Rs 1,519</p>
+                <button class="btn-cart" onclick="AddToCart(6,1519)">Add to Cart</button>
+            </div>
+            <div class="item" id="item8">
+                <img src="./images/handbag.webp" class="img-item"/>
+                <p class="item-name">Green Handbag</p>
+                <p class="item-desc">A small green color handbag which is easy to carry everywhere</p>
+                <p class="item-name">Rs 360</p>
+                <button class="btn-cart" onclick="AddToCart(7,360)">Add to Cart</button>
+            </div>
+            </div>
+        </div>
+        <section id="cartSec" class="dis">
+        <div id="cartdiv" class="carts">
+            <div class="cart-item unselected" id="cart0">
+                <img src="./images/trendydress.avif" class="img-cart-item"/>
+                <div>
+                <p class="item-name">Floral Frock</p>
+                <p class="item-desc">A beautiful floral frock suitable during summer which is simple and comfortable</p>
+                <p class="item-name">Rs 950</p>
+                <button class="btn-cart" onclick="deleteItem(0,950)" >Delete</button>
+                </div>
+            </div>
+            <div class="cart-item unselected" id="cart1">
+                <img src="./images/coat.avif" class="img-cart-item"/>
+                <div>
+                <p class="item-name">Grey Wool Coat</p>
+                <p class="item-desc">A Classic grey wool coat isolated over white suitable during winter season</p>
+                <p class="item-name">Rs 2,050</p>
+                <button class="btn-cart" onclick="deleteItem(1,2050)">Delete</button>
+                </div>
+            </div>
+            <div class="cart-item unselected" id="cart2">
+                <img src="./images/Sneakers.jpeg" class="img-cart-item"/>
+                <div>
+                <p class="item-name">Sneakers</p>
+                <p class="item-desc">A pair of black sneakers with white lace which can be used for daily wear also</p>
+                <p class="item-name">Rs 1,859</p>
+                <button class="btn-cart" onclick="deleteItem(2,1859)">Delete</button>
+                </div>
+            </div>
+            <div class="cart-item unselected" id="cart3">
+                <img src="./images/womenJeans.jpg" class="img-cart-item"/>
+                <div>
+                <p class="item-name">Woman Jeans</p>
+                <p class="item-desc">Jeans for women which is super comfortable and durable</p>
+                <p class="item-name">Rs 1,590</p>
+                <button class="btn-cart" onclick="deleteItem(3,1590)">Delete</button>
+                </div>
+            </div>
+            <div class="cart-item unselected" id="cart4">
+                <img src="./images/headphone.jpg" class="img-cart-item"/>
+                <div>
+                <p class="item-name">Wireless Headphones</p>
+                <p class="item-desc">Black Wireless Headphones which is foldable, has 30-hour battery life with USB-C fast charging</p>
+                <p class="item-name">Rs 4,890</p>
+                <button class="btn-cart" onclick="deleteItem(4,4890)">Delete</button>
+                </div>
+            </div>
+            <div class="cart-item unselected" id="cart5">
+                <img src="./images/earphones.jpeg" class="img-cart-item"/>
+                <div>
+                <p class="item-name">Earphones</p>
+                <p class="item-desc">Black Earphones fits you perfectly without hurting your ears which gives superior comfort</p>
+                <p class="item-name">Rs 349</p>
+                <button class="btn-cart" onclick="deleteItem(5,349)">Delete</button>
+                </div>
+            </div>
+            <div class="cart-item unselected" id="cart6">
+                <img src="./images/watch.jpeg" class="img-cart-item"/>
+                <div>
+                <p class="item-name">Black Leather Watch</p>
+                <p class="item-desc">Black Round Analog Watch With Black Leather Straps which is water resistance</p>
+                <p class="item-name">Rs 1,519</p>
+                <button class="btn-cart" onclick="deleteItem(6,1519)">Delete</button>
+                </div>
+            </div>
+            <div class="cart-item unselected" id="cart7">
+                <img src="./images/handbag.webp" class="img-cart-item"/>
+                <div>
+                <p class="item-name">Green Handbag</p>
+                <p class="item-desc">A small green color handbag which is easy to carry everywhere</p>
+                <p class="item-name">Rs 360</p>
+                <button class="btn-cart" onclick="deleteItem(7,360)">Delete</button>
+                </div>
+            </div>
+        </div>
+        <div class="totalCost">
+            <div class="plan plan2 popular-plan dis" id="costAmount">
+        <div class="header">COST</div>
+        <div class="price">Rs <span id="cost">0</span></div>
+        <div class="amount">TOTAL AMOUNT</div>  
+        <a class="order" onclick="order()">ORDER</a>            
+    </div>
+        </div>
+    </section>
+        <div class="detail-div">
+            <div class="detail">
+                <div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" class="bi bi-truck dicon" viewBox="0 0 16 16">
+  <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+</svg>              
+                    <p class="endhead">FREE SHIPPING</p>
+                    <p class="det-p">Free WorldWide Shipping on all orders</p>
+                </div>
+            </div>
+            <div class="detail">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-tags dicon" viewBox="0 0 16 16">
+  <path d="M3 2v4.586l7 7L14.586 9l-7-7H3zM2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586V2z"/>
+  <path d="M5.5 5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm0 1a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM1 7.086a1 1 0 0 0 .293.707L8.75 15.25l-.043.043a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 0 7.586V3a1 1 0 0 1 1-1v5.086z"/>
+</svg>             
+                    <p class="endhead">LOWEST PRICE</p>
+                    <p class="det-p">Buy Products with lowest ever prices</p>
+                </div>
+            </div>
+            <div class="detail">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-gift dicon" viewBox="0 0 16 16">
+  <path d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zM1 4v2h6V4H1zm8 0v2h6V4H9zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5V7zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5H7z"/>
+</svg>             
+                    <p class="endhead">GIFT CARDS</p>
+                    <p class="det-p">Buy Gift Cards and use coupon codes easily</p>
+                </div>
+            </div>
+            <div class="detail">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-percent dicon" viewBox="0 0 16 16">
+  <path d="M13.442 2.558a.625.625 0 0 1 0 .884l-10 10a.625.625 0 1 1-.884-.884l10-10a.625.625 0 0 1 .884 0zM4.5 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm7 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
+</svg>            
+                    <p class="endhead">DISCOUNTS</p>
+                    <p class="det-p">Upto 80% discount during Festival Seasons</p>
+                </div>
+            </div>
+        </div>
+        <div class="support">
+            <div>
+                <div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+</svg>
+                        <span class="det-p spc" >CONTACT US!</span>
+                    </div>
+                    <div>
+                        <p class="det-p">Keep in touch via email and support system</p>
+                    </div>
+                    <div>
+                        <p class="det-p">We love our customers and they can reach us any time of day, we will be at your service 24/7</p>
+                    </div>
+                </div>
+            </div>
+            <div class="subscribe2">
+                <p class="det-p" >Subscribe to our NewsLetter</p>
+                <div class="subsribe">
+                    <input type="text" size="40" placeholder="your@email.com" class="input2" />
+                    <button class="sub-btn">SUBSCRIBE!</button>
+                </div>
+            </div>
+        </div>
+        <footer>
+                <div class="info">
+                    <p class="endhead">INFORMATION</p>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Contact</li>
+                        <li>Terms and Conditions</li>
+                        <li>Stores</li>
+                    </ul>
+                </div>
+                <div class="useful-links">
+                    <p class="endhead">USEFUL LINKS</p>
+                    <ul>
+                        <li>Support</li>
+                        <li>Refund</li>
+                        <li>FAQ</li>
+                        <li>Feedback</li>
+                    </ul>
+                </div>
+            <div class="f-up">
+                <p class="endhead">Follow Us</p>
+                <div class="follow-us">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook ficon" viewBox="0 0 16 16">
+  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter ficon" viewBox="0 0 16 16">
+  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram ficon" viewBox="0 0 16 16">
+  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp ficon" viewBox="0 0 16 16">
+  <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+</svg>
+                </div>
+            </div>
+        </footer>
+    </section>
+    
+    <script src="index.js"></script>
+</body>
+</html>
