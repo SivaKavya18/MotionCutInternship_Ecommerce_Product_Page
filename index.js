@@ -12,6 +12,7 @@ var searchList=[
 var itemId=document.getElementById('itemId')
 var main=document.getElementById('main')
 var cartSec=document.getElementById('cartSec') 
+var cartdiv=document.getElementById('cartdiv')
 var cost=document.getElementById('cost')
 var costAmount=document.getElementById('costAmount')
 var inputid=document.getElementById('inputid')
@@ -30,6 +31,7 @@ function cart(){
     cartSec.classList.remove('dis')
     inputid.classList.add('dis')
     costAmount.classList.remove('dis') 
+    cartdiv.classList.remove('dis')
 }
 
 function deleteItem(ind,pay){
@@ -48,6 +50,7 @@ function homefun(){
     cartSec.classList.add('dis')
     inputid.classList.remove('dis')
     costAmount.classList.add('dis')
+    cartdiv.classList.add('dis')
 }
 
 function searchInput(){
@@ -62,4 +65,5 @@ function searchInput(){
         }
     }
 }
+
 
